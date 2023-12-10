@@ -1,0 +1,47 @@
+/* 浮动按钮样式 */
+.floating-button {
+    position: fixed;
+    bottom: 20px; /* 距离底部的距离 */
+    left: 20px; /* 距离左侧的距离 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* 圆角按钮 */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    z-index: 999; /* 确保按钮显示在其他元素上面 */
+}
+
+.floating-button-1 {
+    position: fixed;
+    bottom: 70px; /* 距离底部的距离 */
+    left: 20px; /* 距离左侧的距离 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* 圆角按钮 */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    z-index: 999; /* 确保按钮显示在其他元素上面 */
+}
+
+
+.floating-button-2 {
+    position: fixed;
+    bottom: 120px; /* 距离底部的距离 */
+    left: 20px; /* 距离左侧的距离 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* 圆角按钮 */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    z-index: 999; /* 确保按钮显示在其他元素上面 */
+}
+/* 鼠标悬停时的按钮样式 */
+.floating-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
