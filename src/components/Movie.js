@@ -17,7 +17,7 @@ class Movie extends Component {
 
   saveRecoder = async (movieId) =>{
     let username = localStorage.getItem("userName")
-    await axios.post('http://localhost:8080/add-search-record', { username,searchRecord:movieId});
+    await axios.post('https://final-project-node-d408.onrender.com/add-search-record', { username,searchRecord:movieId});
     console.log("save ...")
   }
 

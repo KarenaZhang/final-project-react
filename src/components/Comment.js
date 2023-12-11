@@ -14,7 +14,7 @@ const CommentPage = ({ movieId })  => {
 
   const fetchComments = async () => {
     try {
-        const response = await axios.get(`http://localhost:8080/comment-records-movie/${movieId}`);
+        const response = await axios.get(`https://final-project-node-d408.onrender.com/comment-records-movie/${movieId}`);
         console.log(response.data)
         setComments(response.data);
       } catch (error) {
@@ -37,7 +37,7 @@ const CommentPage = ({ movieId })  => {
     const commentTime = now.toLocaleString();
     let username = localStorage.getItem("userName")
     try {
-      await axios.post('http://localhost:8080/add-comment-record', { username,comment,commentTime,movieId});
+      await axios.post('https://final-project-node-d408.onrender.com/add-comment-record', { username,comment,commentTime,movieId});
       fetchComments(); // 重新加载评论
       setComment(''); // 清空输入框
     //   console.log('11')

@@ -16,7 +16,7 @@ const CommentPage = ( )  => {
   const fetchComments = async () => {
     let username = localStorage.getItem("userName")
     try {
-        const response = await axios.get(`http://localhost:8080/comment-records-user/${username}`);
+        const response = await axios.get(`https://final-project-node-d408.onrender.com/comment-records-user/${username}`);
         console.log(response.data)
         setComments(response.data);
       } catch (error) {

@@ -28,7 +28,7 @@ const SearchRecorder = () => {
   }
   const fetchSearchRecords = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/search-records/${username}`);
+      const response = await axios.get(`https://final-project-node-d408.onrender.com/search-records/${username}`);
       response.data.forEach(async element => {
         let movies = []
           if(element.search_record != null) {

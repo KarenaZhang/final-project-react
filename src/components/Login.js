@@ -50,7 +50,7 @@ const Login = () => {
     // 实现登录逻辑（例如发送请求到后端）
     console.log('Logging in:', username, password);
     try {
-        const response = await axios.post('http://localhost:8080/login', { username, password });
+        const response = await axios.post('https://final-project-node-d408.onrender.com/login', { username, password });
         console.log(response.data);
         // 处理登录成功的情况
         alert("Login successful!");
@@ -71,7 +71,7 @@ const Login = () => {
     // 实现注册逻辑
     console.log('Registering:', username, password);
     try {
-        const response = await axios.post('http://localhost:8080/register', { username, password });
+        const response = await axios.post('https://final-project-node-d408.onrender.com/register', { username, password });
         console.log(response.data);
         alert("Registering successful!")
         // 处理注册成功的情况
